@@ -7,13 +7,15 @@ FROM public.ecr.aws/lts/ubuntu:20.04
 
 RUN apt-get -y update && apt-get install -y --no-install-recommends \
          wget \
-         python \
          nginx \
          ca-certificates \
          libsuitesparse-dev \
          libxml2-dev \
          libxmlsec1-dev \
          libhdf5-dev \
+         libpq-dev \
+         python3-dev \
+         gcc \
     && rm -rf /var/lib/apt/lists/*
 
 # Here we get all python packages.
