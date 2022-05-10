@@ -13,7 +13,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
          libsuitesparse-dev \
          libxml2-dev \
          libxmlsec1-dev \
-         libhdf5-dev
+         libhdf5-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Here we get all python packages.
